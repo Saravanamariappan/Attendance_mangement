@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
+
+header {
+  background: #173b75;
+  color: white;
+  padding: 24px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.stat, .panel {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+.stat p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #173b75;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cbd5e1;
+}
+
+form input {
+  flex: 1;
+  min-width: 150px;
+}
+
+button {
+  background: #173b75;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.present {
+  background: #15803d;
+}
+
+.absent {
+  background: #dc2626;
+}
+
+.delete {
+  background: #64748b;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: #eaf0f9;
+}
+
+.message {
+  background: #dbeafe;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 12px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
